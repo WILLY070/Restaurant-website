@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <style>
+        #contact
+        {
+            color: white;
+            margin-left: 45%;
+            margin-top: 5%;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: rgb(0, 255, 238);
+
+        }
+        #p
+        {
+            color:rgb(218, 232, 243);
+            margin-left: 35%;
+        }
+         #body
+         {
+            background-image:url(reservationsbackground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100hh;
+            height: 100vh;
+            background-position: center;
+            
+         }
+         
+
+         #footer
+         {
+            background-color: #232D3F;
+            height: 15%;
+            margin-top: 0px;
+         }
+
+         #button
+         {
+            background-color: #232D3F;
+            border: rgb(241, 241, 237);
+            color: white;
+            padding: 20px;
+            margin-left: 45%;
+         }
+         a:link{ 
+            color:rgb(236, 230, 230);
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            text-decoration-line: none;
+        
+        }
+        a:visited{
+            color:rgb(253, 243, 243);
+            text-decoration-line: none;
+        }
+        a.hover{
+            border-bottom: #d6d6d2;
+
+        }
+        #form
+        {
+            margin-top: 5%;
+        }
+        .class
+        {
+            border: solid#232D3F;
+            border-style: outset;
+            border-radius: 200px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            font-size: 1.2vw;
+            font-weight: 750;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: #FFFFFF; 
+            padding: 1vh 2vw;
+            transition: all 0.1s;
+        }
+
+        nav ul a:hover,
+        .current-page {
+            border-bottom: solid #eceae1 5px;}
+        #navbar
+        {
+            background-color: #232D3F;
+            margin-top: 0%;
+            height: 20px;
+            margin-bottom: 
+        }
+        header {
+            background-color: #232D3F;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('button').addEventListener('click', function() 
+
+    {
+    // Get form fields
+      const Firstname= document.getElementById('First name').value.trim();
+      const Lastname = document.getElementById('Last name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const number = document.getElementById('number').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Check if any field is empty
+      if (!Firstname || !Lastname || !email || !number || !message) {
+        alert('Please fill in all fields before submitting.');
+      } else {
+        alert('Form submitted successfully!');
+        // Optionally, you can submit the form here
+        // document.getElementById('contactForm').submit();
+      }
+    });
+    });
+  </script>
+</head>
+<body id="body">
+    <header>
+    <nav id="navbar">
+       <ul id="navul">
+        <li id="nav ul li"><a href="index.html">Home</a></li>
+        <li  id="nav ul li"><a href="menu.html">Menu</a></li>
+        <li  id="nav ul li"><a href="reservations.html">Reservations</a></li>
+       </ul>
+    </nav>
+    </header>
+    <h1 id="contact">Contact us</h1>
+    <p id="p"> Experience  fine dining at its best. Secure your reservation now<p>
+        <div id="form">
+            <input type="text" placeholder="First name" id="First name" class="input" style="width: 47%; height: 40px;">&nbsp&nbsp
+            <input type="text" placeholder="Last name" id="Last name" class="input" style="width: 47%; height: 40px;" ><br><br>
+            <input type="email" placeholder="Email address" id="email"class="input"  style="width: 47%; height: 40px;">&nbsp&nbsp
+            <input type="number" placeholder="Phone number" id="number" class="input" style="width: 47%; height: 40px;" ><br><br>
+            <input type="text" placeholder="Message" id="message" class="input" style="width: 100%; height: 60px;"><br>
+            <input type="submit" id="button"><br></input>
+        </div>
+    <footer id="footer">
+        <p style="margin-left: 45%; color: rgb(243, 243, 243); padding: 0px 20px;">&copy; 2025.All rights Reserved</p>
+    </footer>
+</body>
+</html>

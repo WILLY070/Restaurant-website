@@ -1,0 +1,220 @@
+:root {
+    --main-color: #232D3F;
+    --highlight-color: #FFD700;
+    --footer-bg: #232D3F;
+    --header-bg: #232D3F;
+    --body-bg: #232D3F;
+    --icon-width: 8vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #232D3F;
+    color: #FFF;
+}
+
+header {
+    background-color: #232D3F;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    font-size: 1.2vw;
+    font-weight: 750;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #FFFFFF; 
+    padding: 1vh 2vw;
+    transition: all 0.1s;
+}
+
+nav ul a:hover,
+.current-page {
+    border-bottom: solid #eceae1 5px;
+}
+
+.landing-page {
+    background-image:url(abendbrot-939435_1280.jpg);
+    background-size: cover ; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+  }
+  
+.header-cards{
+   background-color: #232D3F;
+   color: #fff;
+   text-align:center;
+   margin-top: 29vh;
+   margin-left: 10vh;
+   border-width: 10px;
+   border-color: #fff;
+   width: 40vh;
+   height: 10vh;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+}
+.cards{
+    display: flex;
+    justify-content:center;
+}
+
+button {
+    background-color: #FFD700; 
+    color: #232D3F; 
+    padding: 1.5vh 3vw; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; /
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #FFC107; 
+}
+.header-cards {
+   background-color: #2C3E50; 
+   color: #fff;
+   text-align: center;
+   margin: 20px; 
+   border: 2px solid #e0dfd5; 
+   border-radius: 10px;
+   padding: 20px; 
+   flex: 1; 
+}
+
+.cards{
+    display: flex;
+    justify-content:center;
+}
+
+button{
+    background-color: #232D3F;
+    color: #fff;
+    padding: 2vh;
+    text-size-adjust: 100px;
+}
+
+.about {
+    background-color: #FFF;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header-cards {
+        flex-direction: column; 
+        margin: 10px; 
+    }
+}
+
+.about p{
+    color: #000;
+}
+.about h2{
+    color: #000;
+    font-size: 50px;
+}
+
+.text-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.image-container img { 
+    /* max-width: 100%;  */
+    height: 60vh;
+    width: 110vh;
+    border-radius: 10;
+}
+   
+.signature-experience { 
+     text-align: center;
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+     padding: 50px;
+} 
+.signature-experience h1 { 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+   
+} 
+.food-item { 
+    display: flex;
+     justify-content: space-around; 
+     flex-wrap: wrap; 
+} 
+.food-item { 
+    width: 22%; 
+    margin: 10px; 
+    background-color: #333333; 
+    padding: 10px; 
+    border-radius: 10px; 
+} 
+.food-item img { 
+    width: 100%;
+     border-radius: 10px; 
+    } 
+.food-item h2 { 
+    font-size: 1.5em; 
+    margin: 10px 0; 
+} 
+.food-item p { 
+    font-size: 1em; 
+    color: #cccccc;
+ }
+
+ .landing-page button a {
+    text-decoration: none;
+    color: #fff;
+ }
+
+.Signature{
+    text-align: center;
+}
+.Signature h2{
+    font-size: 50px;
+    padding-top: 5vh;
+}
+
+.landing-page h1{
+    font-size: 3em;
+}
+
+p{
+    font-size: large;
+}
